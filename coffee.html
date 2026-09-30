@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search Bean Boutique's blends and single-origin coffees by flavour, origin and brewing method.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://tile.openstreetmap.org; style-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://tile.openstreetmap.org; font-src 'self'; base-uri 'self'; form-action 'self' mailto:">
+  <title>Coffee Selection | Bean Boutique</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PGVsbGlwc2UgY3g9JzMyJyBjeT0nMzInIHJ4PScyMScgcnk9JzI4JyBmaWxsPScjODc0MDFmJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNSAzMiAzMiknLz48cGF0aCBkPSdNMjIgNDZjMTctNyAyNC0yMCAyMC0zMycgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmYWYzJyBzdHJva2Utd2lkdGg9JzUnLz48L3N2Zz4=">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/dist/fuse.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Bean Boutique home"><span class="brand-mark" aria-hidden="true">BB</span><span>Bean Boutique</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav class="site-nav" id="primary-navigation" data-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="coffee.html" aria-current="page">Coffee</a><a href="equipment.html">Equipment</a><a href="events.html">Events</a><a href="offers.html">Offers</a><a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count aria-live="polite">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Coffee selection</p>
+        <h1>Choose by taste.</h1>
+        <p class="lede">Search six small-batch coffees by note, origin or brew method. Every card provides a practical starting point.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="catalogue-title">
+      <div class="container">
+        <h2 id="catalogue-title">The current roast list</h2>
+        <div class="search-panel" role="search">
+          <div class="search-field">
+            <label for="coffeeSearch">Search coffees</label>
+            <input id="coffeeSearch" type="search" placeholder="Try chocolate, Ethiopia or French press" autocomplete="off">
+          </div>
+          <div class="search-meta">
+            <span id="searchStatus" role="status" aria-live="polite">6 coffees shown</span><br>
+            <button class="button button-secondary button-small" id="resetSearch" type="button">Reset</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="coffeeCatalogue">
+          <article class="card product-card" id="coffee-ember" data-coffee-card data-name="Ember House Blend" data-notes="dark chocolate caramel hazelnut" data-method="espresso moka pot" data-origin="Brazil Colombia">
+            <div class="product-visual" aria-hidden="true">EH</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Blend</span><span class="tag">Medium-dark</span></div>
+              <h3>Ember House Blend</h3>
+              <p>Brazilian sweetness and Colombian structure produce a round, dependable cup.</p>
+              <p><strong>Tasting notes:</strong> dark chocolate, caramel, hazelnut.</p>
+              <p><strong>Best with:</strong> espresso or moka pot.</p>
+              <span class="price">£11.50 / 250 g</span>
+              <button class="button" type="button" data-add-to-cart data-id="coffee-ember" data-name="Ember House Blend" data-price="11.50">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card" id="coffee-highland" data-coffee-card data-name="Highland Bloom" data-notes="jasmine peach bergamot" data-method="pour-over aeropress" data-origin="Ethiopia Guji">
+            <div class="product-visual teal" aria-hidden="true">HB</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Single origin</span><span class="tag">Light</span></div>
+              <h3>Highland Bloom</h3>
+              <p>A washed Ethiopian coffee with a bright structure and clean floral finish.</p>
+              <p><strong>Tasting notes:</strong> jasmine, peach, bergamot.</p>
+              <p><strong>Best with:</strong> pour-over or AeroPress-style brewer.</p>
+              <span class="price">£14.00 / 250 g</span>
+              <button class="button" type="button" data-add-to-cart data-id="coffee-highland" data-name="Highland Bloom" data-price="14.00">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card" id="coffee-coastal" data-coffee-card data-name="Coastal Cocoa" data-notes="cocoa nib raisin brown sugar" data-method="French press filter" data-origin="Guatemala Huehuetenango">
+            <div class="product-visual gold" aria-hidden="true">CC</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Single origin</span><span class="tag">Medium</span></div>
+              <h3>Coastal Cocoa</h3>
+              <p>A comforting Guatemalan roast with balanced sweetness and low acidity.</p>
+              <p><strong>Tasting notes:</strong> cocoa nib, raisin, brown sugar.</p>
+              <p><strong>Best with:</strong> French press or batch filter.</p>
+              <span class="price">£13.00 / 250 g</span>
+              <button class="button" type="button" data-add-to-cart data-id="coffee-coastal" data-name="Coastal Cocoa" data-price="13.00">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card" id="coffee-monsoon" data-coffee-card data-name="Monsoon Reserve" data-notes="cedar spice treacle" data-method="French press espresso" data-origin="India Malabar">
+            <div class="product-visual" aria-hidden="true">MR</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Single origin</span><span class="tag">Dark</span></div>
+              <h3>Monsoon Reserve</h3>
+              <p>A full-bodied Indian coffee with restrained acidity and a lingering spiced finish.</p>
+              <p><strong>Tasting notes:</strong> cedar, spice, treacle.</p>
+              <p><strong>Best with:</strong> French press or espresso.</p>
+              <span class="price">£12.75 / 250 g</span>
+              <button class="button" type="button" data-add-to-cart data-id="coffee-monsoon" data-name="Monsoon Reserve" data-price="12.75">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card" id="coffee-dawn" data-coffee-card data-name="Dawn Decaf" data-notes="milk chocolate apple almond" data-method="filter cafetiere" data-origin="Colombia sugarcane decaf">
+            <div class="product-visual teal" aria-hidden="true">DD</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Decaf</span><span class="tag">Medium</span></div>
+              <h3>Dawn Decaf</h3>
+              <p>A Colombian sugarcane-process decaf designed to preserve sweetness and body.</p>
+              <p><strong>Tasting notes:</strong> milk chocolate, red apple, almond.</p>
+              <p><strong>Best with:</strong> filter or cafetière.</p>
+              <span class="price">£12.50 / 250 g</span>
+              <button class="button" type="button" data-add-to-cart data-id="coffee-dawn" data-name="Dawn Decaf" data-price="12.50">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card" id="coffee-night" data-coffee-card data-name="Night Shift Espresso" data-notes="black cherry dark cocoa molasses" data-method="espresso milk drinks" data-origin="Brazil Rwanda blend">
+            <div class="product-visual gold" aria-hidden="true">NS</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Blend</span><span class="tag">Medium-dark</span></div>
+              <h3>Night Shift Espresso</h3>
+              <p>A Brazil–Rwanda blend with enough fruit to cut through milk without tasting sharp.</p>
+              <p><strong>Tasting notes:</strong> black cherry, dark cocoa, molasses.</p>
+              <p><strong>Best with:</strong> espresso and milk drinks.</p>
+              <span class="price">£12.00 / 250 g</span>
+              <button class="button" type="button" data-add-to-cart data-id="coffee-night" data-name="Night Shift Espresso" data-price="12.00">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="origin-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">From origin to cup</p><h2 id="origin-title">What changes the flavour?</h2><p class="lede">Swipe through three useful factors rather than treating origin as a guarantee of taste.</p></div></div>
+        <div class="swiper origin-swiper" role="region" aria-label="Coffee origin guide">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide origin-slide"><h3>Origin</h3><p>Altitude, variety and local climate influence density and flavour potential.</p></article>
+            <article class="swiper-slide origin-slide"><h3>Processing</h3><p>Washed, natural and honey processes change clarity, fruit expression and body.</p></article>
+            <article class="swiper-slide origin-slide"><h3>Roast</h3><p>Development choices balance origin character, sweetness, solubility and bitterness.</p></article>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h2>Bean Boutique</h2><p>Thoughtful coffee, useful tools and a neighbourhood table open to curious brewers.</p></div>
+        <div><h3>Visit</h3><ul class="footer-links"><li>Central Manchester</li><li>Mon–Fri: 07:30–18:00</li><li>Sat–Sun: 08:30–17:00</li></ul></div>
+        <div><h3>Explore</h3><ul class="footer-links"><li><a href="equipment.html">Brewing equipment</a></li><li><a href="events.html">Events</a></li><li><a href="offers.html">Subscriptions</a></li></ul></div>
+      </div>
+      <p class="footer-note">Prototype website for academic assessment. Product details and prices are illustrative. Original AI-generated imagery. © <span data-current-year>2026</span> Bean Boutique.</p>
+    </div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>

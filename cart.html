@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review and manage coffee and equipment saved in the Bean Boutique prototype shopping cart.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://tile.openstreetmap.org; style-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://tile.openstreetmap.org; font-src 'self'; base-uri 'self'; form-action 'self' mailto:">
+  <title>Shopping Cart | Bean Boutique</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PGVsbGlwc2UgY3g9JzMyJyBjeT0nMzInIHJ4PScyMScgcnk9JzI4JyBmaWxsPScjODc0MDFmJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNSAzMiAzMiknLz48cGF0aCBkPSdNMjIgNDZjMTctNyAyNC0yMCAyMC0zMycgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmYWYzJyBzdHJva2Utd2lkdGg9JzUnLz48L3N2Zz4=">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Bean Boutique home"><span class="brand-mark" aria-hidden="true">BB</span><span>Bean Boutique</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav class="site-nav" id="primary-navigation" data-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="coffee.html">Coffee</a><a href="equipment.html">Equipment</a><a href="events.html">Events</a><a href="offers.html">Offers</a><a class="cart-link" href="cart.html" aria-current="page">Cart <span class="cart-count" data-cart-count aria-live="polite">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-hero">
+      <div class="container"><p class="eyebrow">Shopping cart</p><h1>Your future order.</h1><p class="lede">Selections remain on this device so you can compare coffee and equipment before online transactions are introduced.</p></div>
+    </header>
+
+    <section class="section" aria-labelledby="cart-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Saved selection</p><h2 id="cart-title">Review your cart</h2></div><button class="button button-secondary" id="clearCart" type="button">Clear cart</button></div>
+        <div class="table-wrap" id="cartTableWrap">
+          <table class="cart-table">
+            <caption class="visually-hidden">Products currently saved in the Bean Boutique cart</caption>
+            <thead><tr><th scope="col">Item</th><th scope="col">Unit price</th><th scope="col">Quantity</th><th scope="col">Line total</th><th scope="col">Action</th></tr></thead>
+            <tbody id="cartItems"></tbody>
+          </table>
+        </div>
+        <div class="empty-state" id="emptyCart" hidden>
+          <h3>Your cart is empty.</h3>
+          <p>Explore the current coffee list or compare brewing equipment.</p>
+          <div class="cluster"><a class="button" href="coffee.html">Browse coffee</a><a class="button button-secondary" href="equipment.html">See equipment</a></div>
+        </div>
+        <div class="cart-summary">
+          <div><span>Prototype subtotal</span><div class="cart-total" id="cartSubtotal">£0.00</div></div>
+          <button class="button" id="checkoutButton" type="button">Continue to checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" aria-labelledby="prototype-limitation-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="prototype-limitation-title">Prototype limitation</h2>
+        <p><strong>Prototype limitation:</strong> No payment or personal information is collected. A production checkout would require authenticated sessions, server-side stock and price checks, a payment-service integration and a database-backed order record.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="checkoutDialog" aria-labelledby="checkout-title">
+    <div class="dialog-body">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Close checkout message">×</button>
+      <p class="eyebrow">Coming next</p>
+      <h2 id="checkout-title">Checkout is not yet enabled.</h2>
+      <p>Your cart remains stored on this device. Secure payment, stock confirmation and account features will be introduced when the back end is developed.</p>
+      <a class="button" href="offers.html">Explore subscriptions</a>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-grid"><div><h2>Bean Boutique</h2><p>Thoughtful coffee, useful tools and a neighbourhood table open to curious brewers.</p></div><div><h3>Visit</h3><ul class="footer-links"><li>Central Manchester</li><li>Mon–Fri: 07:30–18:00</li><li>Sat–Sun: 08:30–17:00</li></ul></div><div><h3>Explore</h3><ul class="footer-links"><li><a href="coffee.html">Coffee selection</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="events.html">Events</a></li></ul></div></div><p class="footer-note">Prototype website for academic assessment. No transactions are processed. © <span data-current-year>2026</span> Bean Boutique.</p></div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bean Boutique offers small-batch coffee, brewing equipment, workshops and flexible subscriptions.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://tile.openstreetmap.org; style-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://tile.openstreetmap.org; font-src 'self'; base-uri 'self'; form-action 'self' mailto:">
+  <title>Bean Boutique Coffee Shop</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PGVsbGlwc2UgY3g9JzMyJyBjeT0nMzInIHJ4PScyMScgcnk9JzI4JyBmaWxsPScjODc0MDFmJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNSAzMiAzMiknLz48cGF0aCBkPSdNMjIgNDZjMTctNyAyNC0yMCAyMC0zMycgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmYWYzJyBzdHJva2Utd2lkdGg9JzUnLz48L3N2Zz4=">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Bean Boutique home">
+        <span class="brand-mark" aria-hidden="true">BB</span>
+        <span>Bean Boutique</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav class="site-nav" id="primary-navigation" data-nav aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>
+        <a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count aria-live="polite">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-media" src="assets/hero-pour-over.png" alt="Pour-over coffee brewing in a warm, modern boutique café" width="1672" height="941">
+      <div class="container hero-content">
+        <p class="eyebrow">Roasted with intent</p>
+        <h1 id="hero-title">Coffee worth slowing down for.</h1>
+        <p>Traceable small-batch beans, honest brewing advice and hands-on workshops for people who want more from every cup.</p>
+        <div class="hero-actions">
+          <a class="button" href="coffee.html">Explore the coffee</a>
+          <a class="button button-secondary" href="events.html">Book a workshop</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The boutique difference</p>
+            <h2 id="why-title">Fresh coffee. Clear choices.</h2>
+            <p class="lede">We pair carefully profiled beans with the equipment and practical guidance needed to brew them confidently.</p>
+          </div>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <span class="icon-tile" aria-hidden="true">01</span>
+              <h3>Small-batch roasting</h3>
+              <p>Weekly roast cycles preserve aroma and make every bag easy to trace from origin to profile.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="icon-tile" aria-hidden="true">02</span>
+              <h3>Matched brewing</h3>
+              <p>Each coffee includes tasting notes and a recommended method, grind range and starting recipe.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="icon-tile" aria-hidden="true">03</span>
+              <h3>Local community</h3>
+              <p>Accessible workshops create a welcoming place to taste, learn and meet the people behind the roast.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" aria-label="Shop highlights">
+      <div class="container metric-strip">
+        <div class="metric"><strong>6</strong><span>distinct roast profiles</span></div>
+        <div class="metric"><strong>3</strong><span>monthly workshops</span></div>
+        <div class="metric"><strong>48h</strong><span>roast-to-dispatch target</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured this month</p>
+            <h2 id="featured-title">Find your next ritual.</h2>
+          </div>
+        </div>
+        <div class="swiper featured-swiper" role="region" aria-label="Featured products and events">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide feature-slide">
+              <img src="assets/coffee-roast-varieties.png" alt="Light, medium and dark roasted coffee beans arranged on a wooden table" width="1448" height="1086">
+              <div class="slide-copy">
+                <p class="eyebrow">Coffee selection</p>
+                <h3>Three profiles. One useful tasting guide.</h3>
+                <p>Compare bright, balanced and deep roasts without relying on vague labels.</p>
+                <a class="button" href="coffee.html">Compare coffees</a>
+              </div>
+            </article>
+            <article class="swiper-slide feature-slide">
+              <img src="assets/brewing-methods.png" alt="Espresso machine, French press and pour-over dripper on a dark café counter" width="1448" height="1086">
+              <div class="slide-copy">
+                <p class="eyebrow">Brewing equipment</p>
+                <h3>Tools selected for everyday use.</h3>
+                <p>Start with dependable equipment and practical usage tips, not an intimidating wall of specifications.</p>
+                <a class="button" href="equipment.html">See equipment</a>
+              </div>
+            </article>
+            <article class="swiper-slide feature-slide">
+              <img src="assets/hero-pour-over.png" alt="A careful pour-over coffee extraction in warm café light" width="1672" height="941">
+              <div class="slide-copy">
+                <p class="eyebrow">Workshop</p>
+                <h3>Pour-over foundations.</h3>
+                <p>Learn water ratio, grind adjustment and pouring control in a friendly 75-minute session.</p>
+                <a class="button" href="events.html">Reserve a place</a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-pagination"></div>
+          <button class="swiper-button-prev" type="button" aria-label="Previous feature"></button>
+          <button class="swiper-button-next" type="button" aria-label="Next feature"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="split-media">
+          <img src="assets/coffee-roast-varieties.png" alt="A curated comparison of three coffee roast levels" width="1448" height="1086">
+        </div>
+        <div>
+          <p class="eyebrow">Built around your taste</p>
+          <h2>Start with flavour, not jargon.</h2>
+          <p class="lede">Search by tasting note, origin or brewing method, then keep selections in your cart while the boutique prepares for online checkout.</p>
+          <ul class="check-list">
+            <li>Searchable coffee catalogue</li>
+            <li>Persistent browser-based cart</li>
+            <li>Flexible monthly subscriptions</li>
+          </ul>
+          <a class="button button-copper" href="offers.html">View subscriptions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="welcomeDialog" aria-labelledby="welcome-title">
+    <div class="dialog-body">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="Close welcome offer">×</button>
+      <p class="eyebrow">First cup on us</p>
+      <h2 id="welcome-title">Save 10% on your first order.</h2>
+      <p>Join the Bean Notes list for a single-use prototype discount code and workshop news.</p>
+      <form>
+        <div class="field">
+          <label for="welcomeEmail">Email address</label>
+          <input id="welcomeEmail" name="email" type="email" autocomplete="email" maxlength="120" required>
+        </div>
+        <button class="button" type="submit">Get my code</button>
+      </form>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Bean Boutique</h2>
+          <p>Thoughtful coffee, useful tools and a neighbourhood table open to curious brewers.</p>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <ul class="footer-links">
+            <li>Central Manchester</li>
+            <li>Mon–Fri: 07:30–18:00</li>
+            <li>Sat–Sun: 08:30–17:00</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="coffee.html">Coffee selection</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="offers.html">Subscriptions</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">Prototype website for academic assessment. Product details, prices and location are illustrative. Original AI-generated imagery. © <span data-current-year>2026</span> Bean Boutique.</p>
+    </div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>

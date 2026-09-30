@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register for coffee tasting, brewing and meet-the-roaster events at Bean Boutique.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://tile.openstreetmap.org; style-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://tile.openstreetmap.org; font-src 'self'; base-uri 'self'; form-action 'self' mailto:">
+  <title>Events and Workshops | Bean Boutique</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PGVsbGlwc2UgY3g9JzMyJyBjeT0nMzInIHJ4PScyMScgcnk9JzI4JyBmaWxsPScjODc0MDFmJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNSAzMiAzMiknLz48cGF0aCBkPSdNMjIgNDZjMTctNyAyNC0yMCAyMC0zMycgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmYWYzJyBzdHJva2Utd2lkdGg9JzUnLz48L3N2Zz4=">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Bean Boutique home"><span class="brand-mark" aria-hidden="true">BB</span><span>Bean Boutique</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav class="site-nav" id="primary-navigation" data-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="coffee.html">Coffee</a><a href="equipment.html">Equipment</a><a href="events.html" aria-current="page">Events</a><a href="offers.html">Offers</a><a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count aria-live="polite">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-hero">
+      <div class="container"><p class="eyebrow">Events and workshops</p><h1>Learn at the table.</h1><p class="lede">Small-group sessions turn tasting vocabulary and brewing variables into skills you can use at home.</p></div>
+    </header>
+
+    <section class="section" aria-labelledby="events-title">
+      <div class="container event-layout">
+        <div>
+          <p class="eyebrow">Upcoming programme</p>
+          <h2 id="events-title">Three ways to join in.</h2>
+          <div class="event-list">
+            <article class="card event-card">
+              <div class="event-date"><strong>10</strong><span>Oct</span></div>
+              <div class="card-body"><h3>Guided Coffee Tasting</h3><p>Compare process, roast and origin across four coffees. No previous tasting experience needed.</p><p><strong>18:30–19:45 · £12 · 10 places</strong></p></div>
+            </article>
+            <article class="card event-card">
+              <div class="event-date"><strong>17</strong><span>Oct</span></div>
+              <div class="card-body"><h3>Pour-over Foundations</h3><p>Build a repeatable recipe by controlling ratio, grind, water temperature and pouring pattern.</p><p><strong>11:00–12:15 · £18 · 8 places</strong></p></div>
+            </article>
+            <article class="card event-card">
+              <div class="event-date"><strong>24</strong><span>Oct</span></div>
+              <div class="card-body"><h3>Meet the Roaster</h3><p>See how sample evaluation informs a production roast, then taste two development approaches.</p><p><strong>18:00–19:30 · Free · 14 places</strong></p></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <p class="eyebrow">Register by email</p>
+          <h2>Reserve a place</h2>
+          <p>Complete the form to open a prepared email. Registration is confirmed only after the events team replies.</p>
+          <form id="eventRegistration" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="firstName">First name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" maxlength="50" required aria-describedby="firstNameError">
+                <span class="field-error" id="firstNameError"></span>
+              </div>
+              <div class="field">
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" maxlength="50" required aria-describedby="lastNameError">
+                <span class="field-error" id="lastNameError"></span>
+              </div>
+              <div class="field field-wide">
+                <label for="registrationEmail">Email address</label>
+                <input id="registrationEmail" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="registrationEmailError">
+                <span class="field-error" id="registrationEmailError"></span>
+              </div>
+              <div class="field field-wide">
+                <label for="eventChoice">Event</label>
+                <select id="eventChoice" name="event" required aria-describedby="eventChoiceError">
+                  <option value="">Choose an event</option>
+                  <option>Guided Coffee Tasting — 10 October</option>
+                  <option>Pour-over Foundations — 17 October</option>
+                  <option>Meet the Roaster — 24 October</option>
+                </select>
+                <span class="field-error" id="eventChoiceError"></span>
+              </div>
+              <div class="field field-wide">
+                <label for="notes">Access needs or questions <span class="visually-hidden">optional</span></label>
+                <textarea id="notes" name="notes" maxlength="300" aria-describedby="notesError"></textarea>
+                <span class="field-error" id="notesError"></span>
+              </div>
+            </div>
+            <button class="button" type="submit">Prepare registration email</button>
+            <p class="status-message" id="registrationStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="location-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Find the shop</p><h2 id="location-title">Central Manchester prototype location</h2><p class="lede">The interactive map supports mouse, touch and keyboard navigation. The address is illustrative for this academic prototype.</p></div></div>
+        <div id="map" role="region" aria-label="Interactive map showing Bean Boutique in central Manchester"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-grid"><div><h2>Bean Boutique</h2><p>Thoughtful coffee, useful tools and a neighbourhood table open to curious brewers.</p></div><div><h3>Visit</h3><ul class="footer-links"><li>Central Manchester</li><li>Mon–Fri: 07:30–18:00</li><li>Sat–Sun: 08:30–17:00</li></ul></div><div><h3>Explore</h3><ul class="footer-links"><li><a href="coffee.html">Coffee selection</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="offers.html">Subscriptions</a></li></ul></div></div><p class="footer-note">Prototype website for academic assessment. Event dates, prices and location are illustrative. Map data © OpenStreetMap contributors. © <span data-current-year>2026</span> Bean Boutique.</p></div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>

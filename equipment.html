@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse practical brewing equipment with clear descriptions and usage tips from Bean Boutique.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://tile.openstreetmap.org; style-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://tile.openstreetmap.org; font-src 'self'; base-uri 'self'; form-action 'self' mailto:">
+  <title>Brewing Equipment | Bean Boutique</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PGVsbGlwc2UgY3g9JzMyJyBjeT0nMzInIHJ4PScyMScgcnk9JzI4JyBmaWxsPScjODc0MDFmJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNSAzMiAzMiknLz48cGF0aCBkPSdNMjIgNDZjMTctNyAyNC0yMCAyMC0zMycgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmYWYzJyBzdHJva2Utd2lkdGg9JzUnLz48L3N2Zz4=">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Bean Boutique home"><span class="brand-mark" aria-hidden="true">BB</span><span>Bean Boutique</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav class="site-nav" id="primary-navigation" data-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="coffee.html">Coffee</a><a href="equipment.html" aria-current="page">Equipment</a><a href="events.html">Events</a><a href="offers.html">Offers</a><a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count aria-live="polite">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-hero">
+      <div class="container"><p class="eyebrow">Brewing equipment</p><h1>Better tools, fewer mysteries.</h1><p class="lede">A focused equipment range with the practical details needed to choose, set up and use each brewer.</p></div>
+    </header>
+
+    <section class="section">
+      <div class="container split">
+        <div class="split-media"><img src="assets/brewing-methods.png" alt="Espresso machine, French press and pour-over dripper on a dark café counter" width="1448" height="1086"></div>
+        <div><p class="eyebrow">Choose for your routine</p><h2>No equipment wall.</h2><p class="lede">The range is organised by brewing style, capacity and effort. Each product includes one useful setup tip before purchase.</p><ul class="check-list"><li>Clear capacity and material information</li><li>Technique guidance for new users</li><li>Cart selections retained on this device</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="equipment-list-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">The equipment shelf</p><h2 id="equipment-list-title">Four dependable starting points.</h2></div></div>
+        <div class="product-grid">
+          <article class="card product-card">
+            <div class="product-visual" aria-hidden="true">ES</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Espresso</span><span class="tag">Home barista</span></div>
+              <h3>Copperline Espresso</h3>
+              <p>A compact single-boiler machine with a 58 mm portafilter, pressure gauge and steam wand.</p>
+              <p><strong>Usage tip:</strong> Warm the group and portafilter for ten minutes, then start near a 1:2 coffee-to-yield ratio.</p>
+              <span class="price">£329.00</span>
+              <button class="button" type="button" data-add-to-cart data-id="equipment-espresso" data-name="Copperline Espresso Machine" data-price="329.00">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-visual teal" aria-hidden="true">FP</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Immersion</span><span class="tag">800 ml</span></div>
+              <h3>Glass Press</h3>
+              <p>A heat-resistant borosilicate French press with a fine stainless-steel mesh and replaceable filter.</p>
+              <p><strong>Usage tip:</strong> Begin with 60 g coffee per litre, steep for four minutes, break the crust and plunge gently.</p>
+              <span class="price">£32.00</span>
+              <button class="button" type="button" data-add-to-cart data-id="equipment-press" data-name="Glass French Press" data-price="32.00">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-visual gold" aria-hidden="true">PO</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Pour-over</span><span class="tag">1–2 cups</span></div>
+              <h3>Arc Pour-over Cone</h3>
+              <p>A ridged ceramic dripper that supports even drainage and retains heat during manual brewing.</p>
+              <p><strong>Usage tip:</strong> Rinse the filter, use medium-fine coffee and pour in controlled pulses to avoid flooding the bed.</p>
+              <span class="price">£24.00</span>
+              <button class="button" type="button" data-add-to-cart data-id="equipment-pourover" data-name="Arc Pour-over Cone" data-price="24.00">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-visual" aria-hidden="true">BG</div>
+            <div class="card-body">
+              <div class="tag-row"><span class="tag">Grinding</span><span class="tag">40 settings</span></div>
+              <h3>Steady Burr Grinder</h3>
+              <p>A low-retention conical-burr grinder with numbered adjustment steps for espresso through French press.</p>
+              <p><strong>Usage tip:</strong> Change grind size while the motor is running and purge a small amount before evaluating a new setting.</p>
+              <span class="price">£118.00</span>
+              <button class="button" type="button" data-add-to-cart data-id="equipment-grinder" data-name="Steady Burr Grinder" data-price="118.00">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container offer-banner">
+        <div><h2>Unsure what fits?</h2><p>Bring your current recipe to a brewing clinic and compare methods before committing.</p></div>
+        <a class="button" href="events.html">See workshops</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-grid"><div><h2>Bean Boutique</h2><p>Thoughtful coffee, useful tools and a neighbourhood table open to curious brewers.</p></div><div><h3>Visit</h3><ul class="footer-links"><li>Central Manchester</li><li>Mon–Fri: 07:30–18:00</li><li>Sat–Sun: 08:30–17:00</li></ul></div><div><h3>Explore</h3><ul class="footer-links"><li><a href="coffee.html">Coffee selection</a></li><li><a href="events.html">Events</a></li><li><a href="offers.html">Subscriptions</a></li></ul></div></div><p class="footer-note">Prototype website for academic assessment. Product details and prices are illustrative. Original AI-generated imagery. © <span data-current-year>2026</span> Bean Boutique.</p></div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>

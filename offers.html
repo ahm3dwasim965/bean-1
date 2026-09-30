@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare Bean Boutique coffee subscriptions and current special offers.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://tile.openstreetmap.org; style-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://tile.openstreetmap.org; font-src 'self'; base-uri 'self'; form-action 'self' mailto:">
+  <title>Special Offers and Subscriptions | Bean Boutique</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA2NCA2NCc+PGVsbGlwc2UgY3g9JzMyJyBjeT0nMzInIHJ4PScyMScgcnk9JzI4JyBmaWxsPScjODc0MDFmJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNSAzMiAzMiknLz48cGF0aCBkPSdNMjIgNDZjMTctNyAyNC0yMCAyMC0zMycgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmYWYzJyBzdHJva2Utd2lkdGg9JzUnLz48L3N2Zz4=">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Bean Boutique home"><span class="brand-mark" aria-hidden="true">BB</span><span>Bean Boutique</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav class="site-nav" id="primary-navigation" data-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="coffee.html">Coffee</a><a href="equipment.html">Equipment</a><a href="events.html">Events</a><a href="offers.html" aria-current="page">Offers</a><a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count aria-live="polite">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-hero">
+      <div class="container"><p class="eyebrow">Special offers and subscriptions</p><h1>Fresh coffee, on your terms.</h1><p class="lede">Choose a simple delivery rhythm, pause whenever needed and receive brew guidance matched to each bag.</p></div>
+    </header>
+
+    <section class="section-tight">
+      <div class="container offer-banner">
+        <div><p class="eyebrow">New customer offer</p><h2>10% off your first coffee order</h2><p>Use prototype code <strong>FIRSTCUP10</strong> in the future checkout. Excludes equipment and workshops.</p></div>
+        <a class="button" href="coffee.html">Choose a coffee</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="subscriptions-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Subscription levels</p><h2 id="subscriptions-title">A plan for every routine.</h2><p class="lede">Selections are stored as a prototype preference on this device; payment and account management would be introduced with the back end.</p></div></div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <span class="badge">Easy start</span>
+            <h3>One Bag</h3>
+            <p class="price-large">£12<span> / month</span></p>
+            <ul class="check-list"><li>One 250 g rotating coffee</li><li>Choose filter or espresso profile</li><li>Digital brew guide</li><li>Pause before dispatch</li></ul>
+            <button class="button button-secondary" type="button" data-subscription="One Bag">Choose One Bag</button>
+          </article>
+          <article class="pricing-card featured">
+            <span class="badge">Most flexible</span>
+            <h3>Tasting Pair</h3>
+            <p class="price-large">£22<span> / month</span></p>
+            <ul class="check-list"><li>Two contrasting 250 g coffees</li><li>Side-by-side tasting card</li><li>Free UK prototype delivery</li><li>10% workshop discount</li></ul>
+            <button class="button" type="button" data-subscription="Tasting Pair">Choose Tasting Pair</button>
+          </article>
+          <article class="pricing-card">
+            <span class="badge">For explorers</span>
+            <h3>Roaster's Table</h3>
+            <p class="price-large">£36<span> / month</span></p>
+            <ul class="check-list"><li>Three 250 g limited coffees</li><li>Early access to releases</li><li>Monthly live tasting stream</li><li>Priority event booking</li></ul>
+            <button class="button button-secondary" type="button" data-subscription="Roaster's Table">Choose Roaster's Table</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Designed to stay useful</p><h2 id="benefits-title">Benefits without lock-in.</h2></div></div>
+        <div class="card-grid">
+          <article class="card"><div class="card-body"><span class="icon-tile" aria-hidden="true">01</span><h3>Freshness window</h3><p>Dispatch is planned shortly after roasting rather than from long-held retail stock.</p></div></article>
+          <article class="card"><div class="card-body"><span class="icon-tile" aria-hidden="true">02</span><h3>Easy control</h3><p>A future account area would allow members to pause, skip or change grind preferences.</p></div></article>
+          <article class="card"><div class="card-body"><span class="icon-tile" aria-hidden="true">03</span><h3>Less guesswork</h3><p>Every delivery includes a starting recipe and clear adjustment advice.</p></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-grid"><div><h2>Bean Boutique</h2><p>Thoughtful coffee, useful tools and a neighbourhood table open to curious brewers.</p></div><div><h3>Visit</h3><ul class="footer-links"><li>Central Manchester</li><li>Mon–Fri: 07:30–18:00</li><li>Sat–Sun: 08:30–17:00</li></ul></div><div><h3>Explore</h3><ul class="footer-links"><li><a href="coffee.html">Coffee selection</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="events.html">Events</a></li></ul></div></div><p class="footer-note">Prototype website for academic assessment. Offers, benefits and prices are illustrative. © <span data-current-year>2026</span> Bean Boutique.</p></div>
+  </footer>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>
