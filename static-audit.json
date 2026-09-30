@@ -1,0 +1,243 @@
+{
+  "tool": "Bean Boutique structural pre-audit",
+  "scope": "Local source checks; not an official W3C validation result",
+  "passed": 47,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Six required HTML pages",
+      "passed": true,
+      "detail": "Found: cart.html, coffee.html, equipment.html, events.html, index.html, offers.html"
+    },
+    {
+      "check": "cart.html: HTML5 doctype",
+      "passed": true,
+      "detail": "Document begins with HTML5 doctype"
+    },
+    {
+      "check": "cart.html: semantic landmarks",
+      "passed": true,
+      "detail": "Header, nav, main and footer present"
+    },
+    {
+      "check": "cart.html: external project CSS",
+      "passed": true,
+      "detail": "Shared stylesheet linked; no style element or style attribute"
+    },
+    {
+      "check": "cart.html: unique IDs",
+      "passed": true,
+      "detail": "12 IDs checked"
+    },
+    {
+      "check": "cart.html: image alternatives",
+      "passed": true,
+      "detail": "0 images checked"
+    },
+    {
+      "check": "cart.html: form control names",
+      "passed": true,
+      "detail": "All labelled"
+    },
+    {
+      "check": "cart.html: internal links",
+      "passed": true,
+      "detail": "All internal targets exist"
+    },
+    {
+      "check": "coffee.html: HTML5 doctype",
+      "passed": true,
+      "detail": "Document begins with HTML5 doctype"
+    },
+    {
+      "check": "coffee.html: semantic landmarks",
+      "passed": true,
+      "detail": "Header, nav, main and footer present"
+    },
+    {
+      "check": "coffee.html: external project CSS",
+      "passed": true,
+      "detail": "Shared stylesheet linked; no style element or style attribute"
+    },
+    {
+      "check": "coffee.html: unique IDs",
+      "passed": true,
+      "detail": "14 IDs checked"
+    },
+    {
+      "check": "coffee.html: image alternatives",
+      "passed": true,
+      "detail": "0 images checked"
+    },
+    {
+      "check": "coffee.html: form control names",
+      "passed": true,
+      "detail": "All labelled"
+    },
+    {
+      "check": "coffee.html: internal links",
+      "passed": true,
+      "detail": "All internal targets exist"
+    },
+    {
+      "check": "equipment.html: HTML5 doctype",
+      "passed": true,
+      "detail": "Document begins with HTML5 doctype"
+    },
+    {
+      "check": "equipment.html: semantic landmarks",
+      "passed": true,
+      "detail": "Header, nav, main and footer present"
+    },
+    {
+      "check": "equipment.html: external project CSS",
+      "passed": true,
+      "detail": "Shared stylesheet linked; no style element or style attribute"
+    },
+    {
+      "check": "equipment.html: unique IDs",
+      "passed": true,
+      "detail": "3 IDs checked"
+    },
+    {
+      "check": "equipment.html: image alternatives",
+      "passed": true,
+      "detail": "1 images checked"
+    },
+    {
+      "check": "equipment.html: form control names",
+      "passed": true,
+      "detail": "All labelled"
+    },
+    {
+      "check": "equipment.html: internal links",
+      "passed": true,
+      "detail": "All internal targets exist"
+    },
+    {
+      "check": "events.html: HTML5 doctype",
+      "passed": true,
+      "detail": "Document begins with HTML5 doctype"
+    },
+    {
+      "check": "events.html: semantic landmarks",
+      "passed": true,
+      "detail": "Header, nav, main and footer present"
+    },
+    {
+      "check": "events.html: external project CSS",
+      "passed": true,
+      "detail": "Shared stylesheet linked; no style element or style attribute"
+    },
+    {
+      "check": "events.html: unique IDs",
+      "passed": true,
+      "detail": "17 IDs checked"
+    },
+    {
+      "check": "events.html: image alternatives",
+      "passed": true,
+      "detail": "0 images checked"
+    },
+    {
+      "check": "events.html: form control names",
+      "passed": true,
+      "detail": "All labelled"
+    },
+    {
+      "check": "events.html: internal links",
+      "passed": true,
+      "detail": "All internal targets exist"
+    },
+    {
+      "check": "index.html: HTML5 doctype",
+      "passed": true,
+      "detail": "Document begins with HTML5 doctype"
+    },
+    {
+      "check": "index.html: semantic landmarks",
+      "passed": true,
+      "detail": "Header, nav, main and footer present"
+    },
+    {
+      "check": "index.html: external project CSS",
+      "passed": true,
+      "detail": "Shared stylesheet linked; no style element or style attribute"
+    },
+    {
+      "check": "index.html: unique IDs",
+      "passed": true,
+      "detail": "8 IDs checked"
+    },
+    {
+      "check": "index.html: image alternatives",
+      "passed": true,
+      "detail": "5 images checked"
+    },
+    {
+      "check": "index.html: form control names",
+      "passed": true,
+      "detail": "All labelled"
+    },
+    {
+      "check": "index.html: internal links",
+      "passed": true,
+      "detail": "All internal targets exist"
+    },
+    {
+      "check": "offers.html: HTML5 doctype",
+      "passed": true,
+      "detail": "Document begins with HTML5 doctype"
+    },
+    {
+      "check": "offers.html: semantic landmarks",
+      "passed": true,
+      "detail": "Header, nav, main and footer present"
+    },
+    {
+      "check": "offers.html: external project CSS",
+      "passed": true,
+      "detail": "Shared stylesheet linked; no style element or style attribute"
+    },
+    {
+      "check": "offers.html: unique IDs",
+      "passed": true,
+      "detail": "4 IDs checked"
+    },
+    {
+      "check": "offers.html: image alternatives",
+      "passed": true,
+      "detail": "0 images checked"
+    },
+    {
+      "check": "offers.html: form control names",
+      "passed": true,
+      "detail": "All labelled"
+    },
+    {
+      "check": "offers.html: internal links",
+      "passed": true,
+      "detail": "All internal targets exist"
+    },
+    {
+      "check": "CSS braces balanced",
+      "passed": true,
+      "detail": "180 opening and 180 closing braces"
+    },
+    {
+      "check": "Responsive media queries",
+      "passed": true,
+      "detail": "Mobile breakpoints and reduced-motion support found"
+    },
+    {
+      "check": "JavaScript syntax",
+      "passed": true,
+      "detail": "node --check passed"
+    },
+    {
+      "check": "No placeholder text",
+      "passed": true,
+      "detail": "No lorem ipsum, TODO or TBD text found"
+    }
+  ]
+}

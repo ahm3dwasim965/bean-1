@@ -1,0 +1,13 @@
+Bean Boutique HTML and CSS validation evidence
+Date: 18 September 2026
+
+Validator: Nu Html Checker (v.Nu), the standalone checker used by the W3C validator service
+Frontend: html5validator 0.4.2
+Scope: dist/*.html and dist/css/styles.css
+Options: HTML5 and CSS validation, text output
+
+Result: PASS
+Exit code: 0
+Messages: No validation messages.
+
+Interpretation: The six HTML documents and shared external CSS file produced no errors or warnings in the final validation run. The earlier run identified illegal spaces in the embedded favicon data URI and CSS compatibility issues. The favicon was converted to base64, modern shorthand was replaced with validator-compatible equivalents, unsupported numeric font weights were normalised, and validation was repeated.
